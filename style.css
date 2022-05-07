@@ -41,3 +41,24 @@ h1 i {
     width: fit-content;
     margin: auto;
 }
+
+#menu-container {
+    border-top: 1px solid #534f52;
+    box-shadow: 0px -1px 5px 1px inset;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: auto;
+    font-size: 1.5em;
+    color: #534f52;
+}
+
+#menu > div {
+    font-family: cursive;
+    color: #ec9a29;
+    text-shadow: 1px 1px black;
+    padding: 2px 20px 8px 20px;
+}
