@@ -62,3 +62,16 @@ h1 i {
     text-shadow: 1px 1px black;
     padding: 2px 20px 8px 20px;
 }
+
+#menu > div:hover {
+    text-shadow: 3px 3px black;
+}
+
+#menu > div.active {
+    text-shadow: 3px 3px black;
+}
+
+#menu > div > a, #menu > div > a:active, #menu > div > a:focus, #menu > div > a:focus-within, #menu > div > a:target, #menu > div > a:hover, #menu > div > a:visited, #menu > div > a:focus-visible {
+    color: #ec9a29;
+    text-decoration: none;
+}
