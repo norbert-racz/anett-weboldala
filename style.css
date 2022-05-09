@@ -1,26 +1,85 @@
-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: 30px 50px 30px 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: #dad2d8;
+    width: 100vw;
+}
+
+h1 > div:nth-child(2) {
+    margin-left: 3vw;
 }
 
 header {
     background-color: #1e7a8e;
     box-shadow: 1px 1px 30px 0px black;
+    color: #ec9a29;
+    font-family: cursive;
+    font-size: .9em;
+    text-shadow: 1px 1px black;
 }
 
+#brand {
+    display: flex;
+    flex-direction: row;
+    padding: 2vw;
+}
+
+#logo {
+    border-radius: 50%;
+    height: 7em;
+    margin-right: 2vw;
+    width: 7em;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+    list-style-type: none;
+    text-align: center;
+}
+
+#menu li {
+    background-color: #58747b;
+    border: 2px solid #534f52;
+    border-radius: 4px;
+    flex-grow: 1;
+    padding: 5px 10px 8px;
+}
+
+#menu li:hover {
+    background-color: #145867;
+}
+
+#menu a, #menu a:active, #menu a:focus, #menu a:focus-within, #menu a:target, #menu a:hover, #menu a:visited, #menu a:focus-visible {
+    color: #ec9a29;
+    text-decoration: none;
+}
+
+#motto {
+    font-size: 1em;
+    font-style: italic;
+    padding: 10px 15px 30px;
+    text-align: center;
+}
+
+@media(max-width: 427px) {
+    #menu li {
+        width: 100%;
+    }
+}
+
+/*
 h1 {
+    color: #ec9a29;
     display: inline;
+    float: right;
     font-family: cursive;
     font-size: 3em;
-    float: right;
-    margin-top: 60px;
-    color: #ec9a29;
     text-shadow: 1px 1px black;
 }
 
@@ -35,6 +94,22 @@ h1 > div:nth-child(2) {
 h1 i {
     font-size: .6em;
     margin-left: 85px;
+}
+
+header {
+    background-color: #1e7a8e;
+    box-shadow: 1px 1px 30px 0px black;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#brand {
+    padding: 30px;
 }
 
 .container > div {
@@ -74,4 +149,4 @@ h1 i {
 #menu > div > a, #menu > div > a:active, #menu > div > a:focus, #menu > div > a:focus-within, #menu > div > a:target, #menu > div > a:hover, #menu > div > a:visited, #menu > div > a:focus-visible {
     color: #ec9a29;
     text-decoration: none;
-}
+}*/
