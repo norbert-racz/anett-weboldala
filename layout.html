@@ -22,20 +22,40 @@
         </div>
         <ul id="menu">
             <li><a href="index.html">Főoldal</a></li>
-            <li><a href="kolyok_kutya.html">Kölyök Kutya</a></li>
-            <li><a href="alap_program.html">Alap progam</a></li>
-            <li><a href="halado_kurzusok.html">Haladó kurzusok</a></li>
-            <li><a href="trening_modszer.html">Tréning módszer</a></li>
-            <li><a href="referencia.html">Referencia</a></li>
-            <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            <li id="kolyok_kutya" onclick="toggleKeepDisplayed('kolyok_kutya_menu', 'kolyok_kutya')"
+                onmouseover="display('kolyok_kutya_menu')" onmouseleave="remove('kolyok_kutya_menu')">Kölyök Kutya
+                <ul id="kolyok_kutya_menu" class="sub-menu">
+                    <li>opcio 1</li>
+                    <li>opcio 2</li>
+                </ul>
+            </li>
+            <li id="alap_program" onclick="toggleKeepDisplayed('alap_program_menu', 'alap_program')"
+                onmouseover="display('alap_program_menu')" onmouseleave="remove('alap_program_menu')">Alap progam</li>
+            <li>Haladó kurzusok</li>
+            <li>Tréning módszer</li>
+            <li>Referencia</li>
+            <li>Kapcsolat</li>
         </ul>
 
-
+        <ul id="alap_program_menu" class="sub-menu">
+            <li>opcio 1</li>
+            <li>opcio 2</li>
+        </ul>
+        <ul id="halado_kurzusok_menu" class="sub-menu">
+            <li>opcio 1</li>
+            <li>opcio 2</li>
+        </ul>
+        <ul id="trening_modszerek_menu" class="sub-menu">
+            <li>opcio 1</li>
+            <li>opcio 2</li>
+        </ul>
     </header>
 
     <!-- Specific content start-->
 
     <!-- Specific content end-->
+
+    <script src="script.js"></script>
 
 </body>
 

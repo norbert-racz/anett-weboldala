@@ -1,7 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+
 
 body {
     background-color: #dad2d8;
@@ -10,6 +7,10 @@ body {
 
 h1 > div:nth-child(2) {
     margin-left: 3vw;
+}
+
+ul {
+    list-style-type: none;
 }
 
 header {
@@ -35,12 +36,13 @@ header {
 }
 
 #menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     font-size: 1.2em;
-    list-style-type: none;
     text-align: center;
+}
+
+#menu a, #menu a:active, #menu a:focus, #menu a:focus-within, #menu a:target, #menu a:hover, #menu a:visited, #menu a:focus-visible {
+    color: #ec9a29;
+    text-decoration: none;
 }
 
 #menu li {
@@ -49,15 +51,21 @@ header {
     border-radius: 4px;
     flex-grow: 1;
     padding: 5px 10px 8px;
+    position: relative;
+}
+
+#menu .sub-menu li {
+    background-color: #534f52;
+    border: 0;
+    border-radius: 0;
 }
 
 #menu li:hover {
     background-color: #145867;
 }
 
-#menu a, #menu a:active, #menu a:focus, #menu a:focus-within, #menu a:target, #menu a:hover, #menu a:visited, #menu a:focus-visible {
-    color: #ec9a29;
-    text-decoration: none;
+#menu .sub-menu li:hover {
+    background-color: #6b686a;
 }
 
 #motto {
@@ -67,9 +75,24 @@ header {
     text-align: center;
 }
 
+.sub-menu {
+    display: none;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top:100%;
+    width: 100%;
+}
+
 @media(max-width: 427px) {
     #menu li {
         width: 100%;
+    }
+}
+
+@media(min-width: 1300px) {
+    #logo {
+        margin-left: 15vw;
     }
 }
 

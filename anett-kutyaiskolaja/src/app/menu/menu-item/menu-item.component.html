@@ -1,0 +1,6 @@
+<li (click)="toggleSubItems()">
+    {{menuItem.name}}
+    <ul [hidden]="subItemsClosed">
+        <app-menu-sub-item *ngFor = "let subItemTitle of menuItem.subItems" [title]="subItemTitle"></app-menu-sub-item>
+    </ul>
+</li>

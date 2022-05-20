@@ -2,44 +2,60 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Anett weboldala</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <div>
-                <img src="img/logo.png" alt="logo">
-                <h1>
-                    <div>Anett</div>
-                    <div>Kutyaiskolája</div>
-                    <!--<i>"Ha szeretsz, szeretettel tanítasz!"</i>-->
-                    <i>"Hogy a kutya a legjobb barátod legyen"</i>
-                </h1>
-            </div>
+        <div id="brand">
+            <img id="logo" src="img/logo.png" alt="logo">
+            <h1>
+                <div>Anett</div>
+                <div>Kutyaiskolája</div>
+            </h1>
         </div>
-        <div id="menu-container">
-            <div id="menu">
-                <div class="active"><a href="index.html">Főoldal</a></div>|
-                <div><a href="kolyok_kutya.html">Kölyök Kutya</a></div>|
-                <div><a href="alap_program.html">Alap progam</a></div>|
-                <div><a href="halado_kurzusok.html">Haladó kurzusok</a></div>|
-                <div><a href="trening_modszer.html">Tréning módszer</a></div>|
-                <div><a href="referencia.html">Referencia</a></div>|
-                <div><a href="kapcsolat.html">Kapcsolat</a></div>
-            </div>
+
+        <div id="motto">
+            <h2>"Hogy&nbspa&nbspkutya a&nbsplegjobb&nbspbarátod&nbsplegyen"</h2>
         </div>
+        <ul id="menu">
+            <li><a href="index.html">Főoldal</a></li>
+            <li id="kolyok_kutya" onclick="toggleKeepDisplayed('kolyok_kutya_menu', 'kolyok_kutya')"
+                onmouseover="display('kolyok_kutya_menu')" onmouseleave="remove('kolyok_kutya_menu')">Kölyök Kutya
+                <ul id="kolyok_kutya_menu" class="sub-menu">
+                    <li>opcio 1</li>
+                    <li>opcio 2</li>
+                </ul>
+            </li>
+            <li id="alap_program" onclick="toggleKeepDisplayed('alap_program_menu', 'alap_program')"
+                onmouseover="display('alap_program_menu')" onmouseleave="remove('alap_program_menu')">Alap progam</li>
+            <li>Haladó kurzusok</li>
+            <li>Tréning módszer</li>
+            <li>Referencia</li>
+            <li>Kapcsolat</li>
+        </ul>
+
+        <ul id="alap_program_menu" class="sub-menu">
+            <li>opcio 1</li>
+            <li>opcio 2</li>
+        </ul>
+        <ul id="halado_kurzusok_menu" class="sub-menu">
+            <li>opcio 1</li>
+            <li>opcio 2</li>
+        </ul>
+        <ul id="trening_modszerek_menu" class="sub-menu">
+            <li>opcio 1</li>
+            <li>opcio 2</li>
+        </ul>
     </header>
 
     <!-- Specific content start-->
 
     <!-- Specific content end-->
+
+    <script src="script.js"></script>
 
 </body>
 
