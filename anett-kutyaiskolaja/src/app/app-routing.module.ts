@@ -4,8 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { ReferenciaComponent } from './referencia/referencia.component';
 
 const routes: Routes = [
-  {path: 'landing', component: LandingComponent},
-  {path: 'referencia', component: ReferenciaComponent}
+  {path: 'anett-weboldala/landing', component: LandingComponent},
+  {path: 'anett-weboldala/referencia', component: ReferenciaComponent},
+  {path: '**', component: LandingComponent}
 ];
 
 @NgModule({

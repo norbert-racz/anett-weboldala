@@ -9,6 +9,7 @@ li {
     border: 2px solid #276c7b;
     font-size: 1.2em;
     flex-direction: column;
+    position: relative;
 }
 
 li:hover {
@@ -18,4 +19,25 @@ li:hover {
 ul {
     list-style-type: none;
     width: 100%;
+}
+
+.arrow {
+  border: solid #c8780b;
+  border-width: 0 3px 3px 0;
+  width: 1em;
+  height: 1em;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 7vw;
+  top: 1em;
+}
+
+.arrow-down {
+  transform: rotate(45deg);
+  top: 0.5em;
+}
+
+.arrow-up {
+  transform: rotate(225deg);
 }

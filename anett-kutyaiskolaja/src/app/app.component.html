@@ -5,12 +5,20 @@
       <div>Anett</div>
       <div>Kutyaiskolája</div>
     </h1>
+    <div id="menu-button" (click)="toggleMenu()" [hidden]="!menuIsClosed">
+      <hr>
+      <hr>
+      <hr>
+    </div>
+    <div id="menu-x" (click)="toggleMenu()" [hidden]="menuIsClosed">
+      &times;
+    </div>
   </div>
 
   <div id="motto">
     <h2>"Hogy a kutya<br>legjobb barátod legyen"</h2>
   </div>
-<div id="menu-button" (click)="toggleMenu()">Menü</div>
 <app-menu [hidden]="menuIsClosed"></app-menu>
 </header>
 <router-outlet></router-outlet>
+<span class="fa fa-solid fa-angle-down"></span>

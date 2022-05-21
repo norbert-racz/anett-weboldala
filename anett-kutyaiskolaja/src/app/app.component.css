@@ -10,6 +10,7 @@ header {
     font-family: cursive;
     font-size: .9em;
     text-shadow: 1px 1px black;
+    position: relative;
 }
 
 #brand {
@@ -19,16 +20,29 @@ header {
 }
 
 #menu-button {
-    display: flex;
-    width: 100%;
-    background-color: #1e7a8e;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    transition: background .5s;
-    border: 2px solid #276c7b;
-    font-size: 1.2em;
-    flex-direction: column;
+    position: absolute;
+    height: 40px;
+    padding: 3px 5px;
+    width: 50px;
+    right: 2vw;
+}
+
+#menu-button hr{
+    margin: 6px;
+    border: 1px solid #ec9a29;
+    box-shadow: 1px 1px black;
+}
+
+#menu-x {
+    position: absolute;
+    height: 40px;
+    width: 50px;
+    right: 2vw;
+    padding-top: 5px;
+    margin-top: -2.5vw;
+    font-size: 3em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #logo {
@@ -44,7 +58,6 @@ header {
     padding: 10px 15px 20px;
     text-align: center;
 }
-
 
 @media(min-width: 1300px) {
     #logo {

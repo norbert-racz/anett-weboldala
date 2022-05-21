@@ -14,27 +14,28 @@ export class MenuComponent implements OnInit {
     },{
       name: "Kölyök kutya",
       subItems : [
-        "opció 1",
-        "opció 2"
+        "Csoportos",
+        "Egyéni"
       ]
     },{
-      name: "Alap program",
+      name: "Felnőtt kutya",
       subItems : [
-        "opció 1",
-        "opció 2"
+        "Csoportos",
+        "Egyéni"
       ]
     },{
       name: "Haladó kurzusok",
       subItems : [
-        "opció 1",
-        "opció 2"
+        "Happility",
+        "Szuperszimat I",
+        "Szuperszimat II",
+        "Szuperszimat III",
+        "Trükkmester",
+        "Jelenlét tudatos"
       ]
     },{
       name: "Tréning módszer",
-      subItems : [
-        "opció 1",
-        "opció 2"
-      ]
+      subItems : []
     },{
       name: "Referencia",
       subItems : []
